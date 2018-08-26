@@ -1,0 +1,59 @@
+{
+  "prod": {
+    "log_files": [
+      {
+        "type": "first_format",
+        "path": "/home/kostjam/go/src/logtomongo/test_data/first.log"
+      },
+      {
+        "type": "second_format",
+        "path": "/home/kostjam/go/src/logtomongo/test_data/second.log"
+      }
+    ],
+    "db": {
+      "hosts": "localhost:27017",
+      "database": "test",
+      "username": "root",
+      "password": "mypassword",
+      "collection": "logs"
+    }
+  },
+  "dev": {
+    "log_files": [
+      {
+        "type": "first_format",
+        "path": "../test_data/first.log"
+      },
+      {
+        "type": "second_format",
+        "path": "../test_data/second.log"
+      }
+    ],
+    "db": {
+      "hosts": "localhost:27017",
+      "database": "test",
+      "username": "root",
+      "password": "mypassword",
+      "collection": "logs"
+    }
+  },
+  "test": {
+    "log_files": [
+      {
+        "type": "first_format",
+        "path": "../test_data/first.log"
+      },
+      {
+        "type": "second_format",
+        "path": "../test_data/second.log"
+      }
+    ],
+    "db": {
+      "hosts": "localhost:27017",
+      "database": "test",
+      "username": "root",
+      "password": "mypassword",
+      "collection": "logs"
+    }
+  }
+}
